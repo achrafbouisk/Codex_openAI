@@ -22,7 +22,13 @@ app.use(cors());
 
 app.use(express.json());
 
-app.get('/', async (req, res) => {
+app.get('/', (req, res) => {
+
+  res.sendStatus(200)
+
+})
+
+app.get('/success', async (req, res) => {
 
   res.status(200).send({
 
